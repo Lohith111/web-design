@@ -2,20 +2,30 @@
 <html>
     <head>
         <title>Transparent Register Form</title>
+        <link href="https://use.fontawesome.com/releases/v5.0.7/css/allcss" rel="stylesheet">
     <link rel="stylesheet" href="style2.css" >
     </head>
     <body>
         <div class="box">
             <form>
                 <div class="inputbox">
-                   <label>Username</label><br>
-                    <input type="text" name="" required><br> 
-                    <label>Email</label><br>
-                    <input type="text" name="" required><br>
-                    <label>Password</label><br>
-                    <input type="text" name="" required> <br>
-                    <label>Confirm Password</label><br>
-                    <input type="text" name="" required><br>
+            
+                    <input type="text" placeholder="Username" required><br></div>
+
+                    <div class="inputbox"> 
+                
+                    <input type="text" placeholder="Email" required><br></div>
+
+                    <div class="inputbox">
+        
+                    <input type="password" placeholder="password" id="pwd" class="masked" name="password"/>
+                    <button type="button" onclick="showhide()" id="eye"> <img src="eye.jpg" alt="eye"/></button>
+
+                    <div class="inputbox">
+                
+                    <input type="text" placeholder="Confirm password" required><br></div>
+                   
+                    
                     <button type="submit">Submit</button>  
                     <p>Already Registered?<a href="#">Login</a></p>
                 </div>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javscript" src="script.js" >
+    </script>
+    <style>
+    body{
+        background-color:white;
+    }
+    
+    .box{
+        width: 380px;
+        margin:auto;
+         height:auto;
+         background: black;
+         padding:10px;
+         border-radius: 5px;
+        
+        
+    }
+    input[type=text] {
+        width: 90%;
+        padding: 15px;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 20px;
+        border-radius: 5px;
+        background:lightyellow;
+
+    }
+    input[type=button]
+    {
+        width:89px;
+        padding: 10px;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 5px;
+        color:white;
+        background: blue;
+
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="box">
+    <form name="calculater">
+<input type="text" name="text1"><br>
+    </div>
+    <div class="box">
+<input type="button" name="btn9" value="9" onclick="calculater.text1.value +='9'">
+<input type="button" name="btn8" value="8" onclick="calculater.text1.value +='8'">
+<input type="button" name="btn7" value="7" onclick="calculater.text1.value +='9'">
+<input type="button" name="addbtn" id="operater" value="+" onclick="calculater.text1.value +='+'"><br>
+    </div>
+    <div class="box">
+<input type="button" name="btn6" value="6" onclick="calculater.text1.value +='6'" >
+<input type="button" name="btn5" value="5" onclick="calculater.text1.value +='5'">
+<input type="button" name="btn4" value="4" onclick="calculater.text1.value +='4'">
+<input type="button" name="subbtn"  id="operater"value="-" onclick="calculater.text1.value +='-'"><br>
+    </div>
+    <div class="box">
+
+<input type="button" name="btn3" value="3" onclick="calculater.text1.value +='3'">
+<input type="button" name="btn2" value="2" onclick="calculater.text1.value +='2'">
+<input type="button" name="btn1" value="1" onclick="calculater.text1.value +='1'">
+<input type="button" name="mulbtn" id="operater" value="x" onclick="calculater.text1.value +='x'"><br>
+    </div>
+<div class="box">
+<input type="button" name="btn0" value="0" onclick="calculater.text1.value +='0'">
+<input type="button" name="clrbtn" value="c" onclick="calculater.text1.value =''">
+<input type="button" name="eqlbtn" value="=" onclick="calculater.text1.value=eval(calculater.text1.value)">
+<input type="button" name="divbtn" id="operater" value="/" onclick="calculater.text1.value +='/'"><br>
+</div>
+    </form>
+   
+
+</div>
+</body>
+
+
+
+
+
+
+
+</html>
